@@ -1,12 +1,12 @@
-#include <bits/stdc++.h>
-#include "RabinKarp.h"
+#include <iostream>
+#include "KMP.h"
 using namespace std;
 
 int main()
 {
-    char text[] = "AAAAAA";
-    char pattern[] = "AAA";
+    // char text[] = "ABAABAAA";
+    // char pattern[] = "AAA";
 
-    cout << find_pattern(text,pattern)<<'\n';
+    cout << strStr("b","baba")<<'\n';
 
 }
