@@ -1,19 +1,35 @@
 #include <iostream>
 #include <string>
-#include "Trie.h"
+#include "compressedTrie.h"
 using namespace std;
 
 int main()
 {
-    Trie root;
+    compressedTrie root;
     root.initialise();
-    root.insertWord((string ("cat")).c_str());
-    root.insertWord((string ("ball")).c_str());
-    root.insertWord((string ("dog")).c_str());
-    root.insertWord((string ("deer")).c_str());
+    root.insertWord("");
+    root.insertWord("facebook");
+    root.insertWord("doing");
+    root.insertWord("face");
+    root.insertWord("facebooker");
+    root.insertWord("facepalm");
 
-    //cout << root.countWord("ball") << '\n';
-    root.deleteWord((string ("deer").c_str()));
-    //root.deleteWord((string("dog")).c_str());
-    cout << root.countPrefix("de") << '\n';
+    root.insertWord("thereafter");
+    root.insertWord("thereis");
+    root.insertWord("this");
+
+    cout << root.countWord("this") << '\n';
+
+    root.deleteWord("doing");
+
+    cout << root.countWord("doing") << '\n';    
+
+    root.deleteWord("this");
+    root.deleteWord("thereis");
+
+    cout << root.countWord("thereafter") << '\n';
+
+    // root.deleteWord((string ("deer").c_str()));
+    // //root.deleteWord((string("dog")).c_str());
+    // cout << root.countPrefix("de") << '\n';
 }

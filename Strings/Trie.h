@@ -1,8 +1,11 @@
 /*
-    initialise(vertex)
-    insertWord(vertex,word)
-    countWord(vertex,word)
-    coutPrefix(vertex,word)
+space complexity linear in (number of words*length) 
+while time complexity is linear in length
+    initialise()
+    insertWord(word)
+    countWord(word)
+    coutPrefix(word)
+    DeleteWord(word)
 */
 #include <map>
 using namespace std;
