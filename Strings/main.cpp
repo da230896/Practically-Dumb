@@ -1,35 +1,41 @@
 #include <iostream>
 #include <string>
-#include "compressedTrie.h"
+#include "Z-algorithm.h"
 using namespace std;
 
 int main()
 {
-    compressedTrie root;
-    root.initialise();
-    root.insertWord("");
-    root.insertWord("facebook");
-    root.insertWord("doing");
-    root.insertWord("face");
-    root.insertWord("facebooker");
-    root.insertWord("facepalm");
+    // compressedTrie root;
+    // root.initialise();
+    // root.insertWord("");
+    // root.insertWord("facebook");
+    // root.insertWord("doing");
+    // root.insertWord("face");
+    // root.insertWord("facebooker");
+    // root.insertWord("facepalm");
 
-    root.insertWord("thereafter");
-    root.insertWord("thereis");
-    root.insertWord("this");
+    // root.insertWord("thereafter");
+    // root.insertWord("thereis");
+    // root.insertWord("this");
 
-    cout << root.countWord("this") << '\n';
+    // cout << root.countWord("this") << '\n';
 
-    root.deleteWord("doing");
+    // root.deleteWord("doing");
 
-    cout << root.countWord("doing") << '\n';    
+    // cout << root.countWord("doing") << '\n';    
 
-    root.deleteWord("this");
-    root.deleteWord("thereis");
+    // root.deleteWord("this");
+    // root.deleteWord("thereis");
 
-    cout << root.countWord("thereafter") << '\n';
-
+    // cout << root.countWord("thereafter") << '\n';
     // root.deleteWord((string ("deer").c_str()));
     // //root.deleteWord((string("dog")).c_str());
     // cout << root.countPrefix("de") << '\n';
+
+    if(find("aaabbbxxcccfff","bxxcc"))
+    {
+        cout << "Pattern Found\n";
+    }else{
+        cout << "Pattern Not Found\n";
+    }
 }
