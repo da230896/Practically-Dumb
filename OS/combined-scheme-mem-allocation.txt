@@ -1,0 +1,14 @@
+4182016 BYTES or 4.18MB
+
+direct indexable in 4KB combined allocation scheme
+
+1022nd pointer will be used for single indirection:
+4.2 MB
+
+1023rd pointer will be used for double indirection:
+4.29 GB
+
+1024th pointer will be used for triple indirection:
+4.398 TB
+
+total indexable data 4402.348 GB Now
